@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <title>Comprehensive HTML Table Example</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tfoot {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Monthly Sales Report</h1>
+
+    <table style="width:100%">
+        <caption>Sales Data for Q1 2025</caption>
+        <colgroup>
+            <col span="2" style="background-color:lightgray">
+            <col style="background-color:lightblue">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Product A Sales</th>
+                <th>Product B Sales</th>
+                <th>Total Sales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$15,000</td>
+                <td>$12,000</td>
+                <td>$27,000</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$18,000</td>
+                <td>$14,500</td>
+                <td>$32,500</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>$20,000</td>
+                <td>$16,000</td>
+                <td>$36,000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Quarterly Total:</td>
+                <td>$95,500</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
